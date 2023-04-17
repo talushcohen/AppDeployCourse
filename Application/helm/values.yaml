@@ -2,7 +2,7 @@ ReplicaNumber: 3
 
 containers:
   containerPort: 8080
-  image: 'quay.io/talushcohen/repo1:v3'
+  image: 'quay.io/talushcohen/repo1'
   tag: 'chart_v1'
 
 service:
