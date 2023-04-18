@@ -28,7 +28,7 @@ volume:
 test: Healty
 github:
   user: talushcohen
-  token: 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
-  url: <https://api.github.com/repos/talushcohen/repo1/issues>
+  token: empty-pass
+  url: https://api.github.com/repos/talushcohen/repo1/issues
 
 
