@@ -17,12 +17,13 @@ spec:
        workingDir: /workspace/output
        command: ["/bin/bash", "-c"]
        #args: ["curl ${SERVICE}:${PORT}/health/liveliness | grep ${TEST} || exit 1"]
-       args: ["curl $SERVICE:$PORT/health/liveliness | grep $TEST || exit 1"]       
+       args: ["curl $SERVICE:$PORT/health/liveliness | grep $TEST || exit 1"]
+       #EnvVar.spec.template.spec.containers.env.value of type string       
        env:
          - name: SERVICE
-           value: {{ .Release.Name }}-service
+           value: "{{ .Release.Name }}-service"
          - name: PORT
-           value: {{ .Values.service.servicePort }}
+           value: "{{ .Values.service.servicePort }}"
          - name: TEST
            value: "{{ .Values.test }}"
   backoffLimit: 1

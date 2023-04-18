@@ -25,6 +25,6 @@ probes:
 volume:
   mount:
     path: /tmp/html
-test: Null
+test: Healty
 
 
