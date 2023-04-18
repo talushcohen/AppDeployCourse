@@ -2,3 +2,9 @@ curl -u talushcohen:ghp_05n9aE9XQbnTvhbJAzJUDNUXtGg4W0i1E6P \
   -X POST \
   https://api.github.com/repos/talushcohen/AppDeployCourse/issues \
   -d '{"title":"Found a bug","body":"I'\''m having a problem with this.","assignees":["octocat"],"milestone":1,"labels":["bug"]}'
+
+export USERNAME=talushcohen \
+export TOKEN=ghp_05n9aE9XQbnTvhbJAzJUDNUXtGg4W0i1E6P \
+export URL=https://api.github.com/repos/talushcohen/AppDeployCourse/issues
+
+curl -u $USERNAME:$TOKEN -X POST -d '{"title":"Deployment sync Done","body":"The web site not Healthy."}' $URL
