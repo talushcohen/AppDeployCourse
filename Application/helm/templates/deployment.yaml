@@ -12,6 +12,8 @@ spec:
       labels:
         app: {{ .Release.Name }}
     spec:
+      syncPolicy:
+        automated: {}
       volumes:
         - name: index-html
           configMap:
