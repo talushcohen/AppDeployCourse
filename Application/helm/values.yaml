@@ -29,6 +29,6 @@ test: Healty
 github:
   user: talushcohen
   token: empty-pass
-  url: https://api.github.com/repos/talushcohen/repo1/issues
+  url: https://api.github.com/repos/talushcohen/AppDeployCourse/issues
 
 
